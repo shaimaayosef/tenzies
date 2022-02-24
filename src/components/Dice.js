@@ -2,8 +2,9 @@ import React from 'react'
 
 const Dice = ({diceObject,hold}) => {  
   const styles = {
-                backgroundColor: diceObject.held ? "white" : ""
-            }   
+                backgroundColor: diceObject.held ? "white" : "#d448a6",
+                boxShadow:diceObject.held ? "inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7, inset -5px 0 #d7d7d7" :"inset 0 5px #d448a6"
+        }   
    
     let dice 
         switch (diceObject.value){
